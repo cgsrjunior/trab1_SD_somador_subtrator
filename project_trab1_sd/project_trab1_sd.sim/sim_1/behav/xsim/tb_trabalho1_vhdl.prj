@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_trab1_sd.srcs/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd" \
+"../../../../project_trab1_sd.srcs/sources_1/new/cont8bits.vhd" \
+"../../../../project_trab1_sd.srcs/sources_1/new/display8saidas.vhd" \
+"../../../../project_trab1_sd.srcs/sources_1/new/mux2p1.vhd" \
+"../../../../project_trab1_sd.srcs/sources_1/new/reg8bits.vhd" \
+"../../../../project_trab1_sd.srcs/sources_1/new/reg8bitsLR.vhd" \
+"../../../../project_trab1_sd.srcs/sources_1/new/somador8bits.vhd" \
+"../../../../project_trab1_sd.srcs/sources_1/new/sub8bits_xilinx.vhd" \
+"../../../../project_trab1_sd.srcs/sources_1/new/trabalho1.vhd" \
+"../../../../project_trab1_sd.srcs/sim_1/new/tb_trabalho1.vhd" \
+
+# Do not sort compile order
+nosort

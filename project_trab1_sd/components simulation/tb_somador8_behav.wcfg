@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_somador8_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_somador8" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="90183334fs"></ZoomStartTime>
+      <ZoomEndTime time="149083335fs"></ZoomEndTime>
+      <Cursor1Time time="120000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/tb_somador8/Aint" type="array">
+      <obj_property name="ElementShortName">Aint[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Aint[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_somador8/Bint" type="array">
+      <obj_property name="ElementShortName">Bint[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Bint[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_somador8/sumint" type="array">
+      <obj_property name="ElementShortName">sumint[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sumint[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

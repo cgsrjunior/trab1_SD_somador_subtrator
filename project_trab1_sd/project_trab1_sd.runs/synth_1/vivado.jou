@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar  8 21:28:36 2021
+# Process ID: 6664
+# Current directory: D:/Projetos SD/project_trab1_sd/project_trab1_sd.runs/synth_1
+# Command line: vivado.exe -log trabalho1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source trabalho1.tcl
+# Log file: D:/Projetos SD/project_trab1_sd/project_trab1_sd.runs/synth_1/trabalho1.vds
+# Journal file: D:/Projetos SD/project_trab1_sd/project_trab1_sd.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source trabalho1.tcl -notrace

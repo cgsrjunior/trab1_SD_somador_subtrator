@@ -1,0 +1,336 @@
+
+*** Running vivado
+    with args -log trabalho1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source trabalho1.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source trabalho1.tcl -notrace
+Command: synth_design -top trabalho1 -part xa7a12tcpg238-2I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a12t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7a12t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2568 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 366.023 ; gain = 99.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'trabalho1' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:44]
+INFO: [Synth 8-3491] module 'cont8bits' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/cont8bits.vhd:13' bound to instance 'cont' of component 'cont8bits' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'cont8bits' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/cont8bits.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'cont8bits' (1#1) [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/cont8bits.vhd:20]
+INFO: [Synth 8-3491] module 'reg8bitsLR' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/reg8bitsLR.vhd:4' bound to instance 'regLR' of component 'reg8bitsLR' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'reg8bitsLR' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/reg8bitsLR.vhd:11]
+WARNING: [Synth 8-614] signal 'LR' is read in the process but is not in the sensitivity list [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/reg8bitsLR.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'reg8bitsLR' (2#1) [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/reg8bitsLR.vhd:11]
+INFO: [Synth 8-3491] module 'somador8bits' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/somador8bits.vhd:34' bound to instance 'somador' of component 'somador8bits' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'somador8bits' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/somador8bits.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'somador8bits' (3#1) [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/somador8bits.vhd:40]
+INFO: [Synth 8-3491] module 'sub8bits_xilinx' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/sub8bits_xilinx.vhd:34' bound to instance 'subtractor' of component 'sub8bits_xilinx' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'sub8bits_xilinx' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/sub8bits_xilinx.vhd:40]
+INFO: [Synth 8-3491] module 'c_addsub_0' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.runs/synth_1/.Xil/Vivado-6664-DESKTOP-BGPAF19/realtime/c_addsub_0_stub.vhdl:5' bound to instance 'your_instance_name' of component 'c_addsub_0' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/sub8bits_xilinx.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.runs/synth_1/.Xil/Vivado-6664-DESKTOP-BGPAF19/realtime/c_addsub_0_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'sub8bits_xilinx' (4#1) [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/sub8bits_xilinx.vhd:40]
+INFO: [Synth 8-3491] module 'mux2p1' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/mux2p1.vhd:34' bound to instance 'mux' of component 'mux2p1' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'mux2p1' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/mux2p1.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mux2p1' (5#1) [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/mux2p1.vhd:41]
+INFO: [Synth 8-3491] module 'reg8bits' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/reg8bits.vhd:4' bound to instance 'regA' of component 'reg8bits' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'reg8bits' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/reg8bits.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'reg8bits' (6#1) [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/reg8bits.vhd:10]
+INFO: [Synth 8-3491] module 'display4saidas' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/display8saidas.vhd:9' bound to instance 'nibbleA' of component 'display4saidas' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'display4saidas' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/display8saidas.vhd:14]
+INFO: [Synth 8-226] default block is never used [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/display8saidas.vhd:25]
+WARNING: [Synth 8-3848] Net dado in module/entity display4saidas does not have driver. [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/display8saidas.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'display4saidas' (7#1) [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/display8saidas.vhd:14]
+INFO: [Synth 8-3491] module 'display4saidas' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/display8saidas.vhd:9' bound to instance 'nibbleB' of component 'display4saidas' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:149]
+INFO: [Synth 8-3491] module 'reg8bits' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/reg8bits.vhd:4' bound to instance 'regB' of component 'reg8bits' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:153]
+INFO: [Synth 8-3491] module 'reg8bits' declared at 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/reg8bits.vhd:4' bound to instance 'regC' of component 'reg8bits' [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'trabalho1' (8#1) [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/trabalho1.vhd:44]
+WARNING: [Synth 8-3331] design display4saidas has unconnected port valor_in[3]
+WARNING: [Synth 8-3331] design display4saidas has unconnected port valor_in[2]
+WARNING: [Synth 8-3331] design display4saidas has unconnected port valor_in[1]
+WARNING: [Synth 8-3331] design display4saidas has unconnected port valor_in[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 421.797 ; gain = 155.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 421.797 ; gain = 155.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 421.797 ; gain = 155.656
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xa7a12tcpg238-2I
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'subtractor/your_instance_name'
+Finished Parsing XDC File [d:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'subtractor/your_instance_name'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 711.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 711.398 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 711.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 711.398 ; gain = 445.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7a12tcpg238-2I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 711.398 ; gain = 445.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for subtractor/your_instance_name. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 711.398 ; gain = 445.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Projetos SD/project_trab1_sd/project_trab1_sd.srcs/sources_1/new/cont8bits.vhd:33]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 711.398 ; gain = 445.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cont8bits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg8bitsLR 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module somador8bits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module mux2p1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module reg8bits 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module display4saidas 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design trabalho1 has unconnected port seletor
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 711.398 ; gain = 445.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 723.254 ; gain = 457.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 723.254 ; gain = 457.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 732.844 ; gain = 466.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 732.844 ; gain = 466.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 732.844 ; gain = 466.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 732.844 ; gain = 466.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 732.844 ; gain = 466.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 732.844 ; gain = 466.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 732.844 ; gain = 466.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |c_addsub_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |c_addsub_0_bbox_0 |     1|
+|2     |BUFG              |     1|
+|3     |CARRY4            |     2|
+|4     |LUT1              |     3|
+|5     |LUT2              |     7|
+|6     |FDCE              |    16|
+|7     |IBUF              |    12|
+|8     |OBUF              |    16|
++------+------------------+------+
+
+Report Instance Areas: 
++------+-------------+----------------+------+
+|      |Instance     |Module          |Cells |
++------+-------------+----------------+------+
+|1     |top          |                |    65|
+|2     |  cont       |cont8bits       |    20|
+|3     |  regLR      |reg8bitsLR      |     8|
+|4     |  subtractor |sub8bits_xilinx |     8|
++------+-------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 732.844 ; gain = 466.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 732.844 ; gain = 177.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 732.844 ; gain = 466.703
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 742.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 742.105 ; gain = 487.484
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 742.105 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Projetos SD/project_trab1_sd/project_trab1_sd.runs/synth_1/trabalho1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file trabalho1_utilization_synth.rpt -pb trabalho1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  8 21:29:30 2021...
